@@ -44,13 +44,6 @@ void main(){
 
     vec3 R = reflect(-L,N);
 
-
-    //vec3 Kd = texture(myTextureSampler,vertexUV).rgb;
-
-    //vec3 Kd = vec3(0.4,0.0,0.0);
-
-
-
     vec3 diffuse = max(dot(N,L),0.0) * Kd;
 
     vec3 specular = pow(max(dot(R,V),0.0),n) * Ks;
