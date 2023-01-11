@@ -345,9 +345,6 @@ main(const int argc, const char** argv)
   GLuint Amb_Intensity = glGetUniformLocation(program_id,"IA");
   GLuint Cons_K = glGetUniformLocation(program_id,"K");
 
-
-
-
   GLuint renderedTexture_id = glGetUniformLocation(program_quad, "renderedTexture");
   GLuint TextureID  = glGetUniformLocation(program_id, "myTextureSampler");
   GLuint hf = glGetUniformLocation(program_quad, "halftone");
@@ -355,24 +352,14 @@ main(const int argc, const char** argv)
 
   static int half = 1;
 
-
-
-
-
   // Load the texture
   GLuint tex = loadTexture_from_file("uvmap.jpg");
 
   // Read our .obj file
-  //objects = ReadAsArrayObjects("suzanne.obj");
 
-  //objects->Create();
   objects = ReadAsArrayObjects(std::string(argv[1]));
   objects->Create();
-
-  //Obj.push_back(ReadAsArrayObjects("cube.obj"));
-  //Obj[1]->Create();
-
-
+  
   ivec2 framebuffer_size, window_size;
   glfwGetWindowSize(window,&window_size.x,&window_size.y);
   glfwGetFramebufferSize(window, &framebuffer_size.x, &framebuffer_size.y);
@@ -380,7 +367,6 @@ main(const int argc, const char** argv)
 
 
   fbo.Generate();
-  //fbo.color_tex = TextureID;
   fbo.Resize(framebuffer_size.x, framebuffer_size.y, false);
 
   int Size = framebuffer_size.x;
@@ -452,8 +438,6 @@ main(const int argc, const char** argv)
           MV = V * M;
         }
 
-
-
         // Send our transformation to the currently bound shader,
         // in the "MVP" uniform
         glUniformMatrix4fv(MVP_id, 1, GL_FALSE, &MVP[0][0]);
@@ -490,8 +474,7 @@ main(const int argc, const char** argv)
           objects->Render();
 
         }
-
-
+      
       fbo.UnbindFramebuffer();
 
       // -----------------------------------------------------------
@@ -512,8 +495,6 @@ main(const int argc, const char** argv)
           glViewport(0, 400, 400 , 400 );
 
         }
-
-        //glViewport(0, 0, 800 * 2, 800 * 2);
 
         glDisable(GL_DEPTH_TEST);
 
