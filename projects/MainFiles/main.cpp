@@ -31,9 +31,9 @@ std::vector<TriangleArrayObjects*>Obj;
 
 bool enable_painter_algorithm = false;
 
-void
-cursor(GLFWwindow* window, double xpos, double ypos)
+void cursor(GLFWwindow* window, double xpos, double ypos)
 {
+  
 }
 
 
@@ -46,8 +46,7 @@ struct FrameBufferObject {
   GLuint depth_tex; // depth texture. slower, but you can sample it later in your shader
   GLuint depth_rb; // depth render buffer: faster
 
-  void
-  Generate()
+  void Generate()
   {
     glGenFramebuffers(1, &framebuffer_id);
     glGenTextures(1, &color_tex);
@@ -55,8 +54,7 @@ struct FrameBufferObject {
     glGenRenderbuffers(1, &depth_rb);
   }
 
-  void
-  Resize(int width, int height, bool enable_depth_texture)
+  void Resize(int width, int height, bool enable_depth_texture)
   {
     BindFramebuffer();
 
@@ -104,28 +102,24 @@ struct FrameBufferObject {
     UnbindFramebuffer();
   }
 
-  void
-  BindFramebuffer()
+  void BindFramebuffer()
   {
     // Switch to the framebuffer object
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer_id);
   }
 
-  void
-  UnbindFramebuffer()
+  void UnbindFramebuffer()
   {
     // Switch back to the default framebuffer
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
   }
 
-  void
-  BindColorTexture()
+  void BindColorTexture()
   {
     glBindTexture(GL_TEXTURE_2D, color_tex);
   }
 
-  void
-  BindDepthTexture()
+  void BindDepthTexture()
   {
     glBindTexture(GL_TEXTURE_2D, depth_tex);
   }
@@ -445,13 +439,13 @@ main(const int argc, const char** argv)
           MVP = P1 * V * M;
           MV = V * M;
         }
-        if (i == 1) {
+        else if (i == 1) {
           ArcballCamera cam(vec3(4, 0, .001), vec3(0, 0, 0), vec3(0, 1, 0));
           V = cam.transform();
           MVP = P1 * V * M;
           MV = V * M;
         }
-        if (i == 2) {
+        else  {
           ArcballCamera cam(vec3(0, 4, .001), vec3(0, 0, 0), vec3(0, 1, 0));
           V = cam.transform();
           MVP = P1 * V * M;
@@ -506,15 +500,15 @@ main(const int argc, const char** argv)
 
       {
 
-        if(i == 0){
+        if (i == 0){
           glClear(GL_COLOR_BUFFER_BIT);
           glViewport(0, 0, 400 , 400 );
         }
-        if(i == 1){
+        else if (i == 1){
           glViewport(400, 0, 400 , 400 );
 
         }
-        if(i == 2){
+        else {
           glViewport(0, 400, 400 , 400 );
 
         }
