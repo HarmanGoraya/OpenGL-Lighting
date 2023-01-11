@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\glfw-3.3.2\;CMake Files\glfw-3.3.2\src\;CMake Files\bin2c\;CMake Files\glm-0.9.9.8\;CMake Files\glm-0.9.9.8\glm\;CMake Files\glad-compatible\;CMake Files\glad-core-3.3\;CMake Files\glad-core-4.1\;CMake Files\glad-core-4.6\;CMake Files\imgui-1.79\;CMake Files\util\;CMake Files\demo\;CMake Files\projects\;CMake Files\projects\skeleton_p1\;CMake Files\projects\skeleton_p2\;CMake Files\projects\skeleton_p3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/amritgoraya/Downloads/ecs175-demo 2/cmake-build-debug/glm-0.9.9.8"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/amritgoraya/Downloads/ecs175-demo\ 2/cmake-build-debug/glm-0.9.9.8/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/amritgoraya/Downloads/ecs175-demo\ 2/cmake-build-debug/glm-0.9.9.8/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/amritgoraya/Downloads/ecs175-demo\ 2/cmake-build-debug/glm-0.9.9.8/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/amritgoraya/Downloads/ecs175-demo\ 2/cmake-build-debug/glm-0.9.9.8/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glfw-3.3.2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glfw-3.3.2\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glfw-3.3.2/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glfw-3.3.2\src\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glfw-3.3.2/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\glfw-3.3.2\src\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glfw-3.3.2/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\glfw-3.3.2\src\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glfw-3.3.2/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\glfw-3.3.2\src\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/bin2c/target_add_embeded_shaders.cmake">
+			<Option virtualFolder="CMake Files\bin2c\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glm-0.9.9.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glm-0.9.9.8\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glm-0.9.9.8/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glm-0.9.9.8\glm\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glad-compatible/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glad-compatible\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glad-core-3.3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glad-core-3.3\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glad-core-4.1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glad-core-4.1\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/glad-core-4.6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\glad-core-4.6\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/imgui-1.79/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\imgui-1.79\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\util\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/demo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/projects/skeleton_p1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\projects\skeleton_p1\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/projects/skeleton_p2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\projects\skeleton_p2\"/>
+		</Unit>
+		<Unit filename="/Users/amritgoraya/Downloads/ecs175-demo 2/projects/skeleton_p3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\projects\skeleton_p3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

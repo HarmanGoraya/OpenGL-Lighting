@@ -1,0 +1,6 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/amritgoraya/Downloads/ecs175-demo 2"
+-- Using Cocoa for window creation
+-- Copying shader to build directory [d4_simple_shader]
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/amritgoraya/Downloads/ecs175-demo 2/cmake-build-debug

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/amritgoraya/Downloads/ecs175-demo 2/bin2c/bin2c.c
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+errno.h
+-
+string.h
+-
+assert.h
+-
+
