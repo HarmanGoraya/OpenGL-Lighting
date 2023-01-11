@@ -23,15 +23,10 @@ void main(){
 
     where = vec2(int(gl_FragCoord.x - 0.5) % 3,int(gl_FragCoord.y - 0.5) % 3);
 
-
-
     where2 = vec2(int(UV.x * 1600) % 3, int(UV.y * 1600) % 3);
-
 
     int x = int(where.x);
     int y = int(where.y);
-
-
 
     float dxtex = 1.0/float(textureSize(renderedTexture,0));
     float dytex = 1.0/float(textureSize(renderedTexture,0));
@@ -90,14 +85,5 @@ void main(){
    else{
         color = texture(renderedTexture,UV).xyz;
     }
-
-    //color = texture(renderedTexture,UV).xyz;
-    //color = avgcolor;
-
-    //color = vec3(red_intensity,green_intensity,blue_intensity);
-
-
-
-
 
 }
