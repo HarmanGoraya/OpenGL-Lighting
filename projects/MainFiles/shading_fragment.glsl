@@ -16,13 +16,6 @@ out vec4 outcolor;
 
 void main(){
 
-
-
-
-	//color = Normal_modelspace * 0.5 + 0.5;
-
 	outcolor = vec4(color,1.0);
-
-
 
 }
